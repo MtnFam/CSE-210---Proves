@@ -7,3 +7,5 @@ class Program
         Console.WriteLine("test");
     }
 }
+
+test
