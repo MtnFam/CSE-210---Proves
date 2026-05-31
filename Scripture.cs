@@ -1,15 +1,33 @@
 using System;
 
-class Scripture
+// Handles the Scripture object, keeping track of both the Reference and the Passage.
+public class Scripture
 {
-    // This method will be used to temporarily store and display the scripture reference and text
-    // The scripture will be run through this program before being used in the scripture memorization program
-    static void Reference(string[] args)
+    private Reference _reference;
+    private Passage _passage;
+    
+    // Creates a new instance of the Scripture class using the reference and passage parameters
+    public Scripture(Reference reference, Passage passage)
     {
-        string reference = "";
+        _reference = reference;
+        _passage = passage;
     }
-    static void Passage(string[] args)
+
+    // Calls the hideWords function from Passage (not directly manipulating the words).
+    public void HideWords(int countToHide)
     {
-        string passage = "";
+        _passage.HideWords(countToHide);
+    }
+
+    // Makes sure all of the words have been hidden
+    public bool IsAllHidden()
+    {
+        return _passage.IsAllHidden();
+    }
+
+    /// Formats the complete scripture for display in the console view.
+    public override string ToString()
+    {
+        return $"{_reference.ToString()}\n{_passage.ToString()}";
     }
 }
