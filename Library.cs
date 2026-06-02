@@ -1,30 +1,56 @@
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 
+class ScriptureEntry
+{
+    private string _reference;
+    private string _passage;
+
+    public ScriptureEntry(string reference, string passage)
+    {
+        _reference = reference;
+        _passage = passage;
+    }
+
+    public string GetReference()
+    {
+        return _reference;
+    }
+
+    public string GetPassage()
+    {
+        return _passage;
+    }
+}
+
 class Library
 {
-    static void Main(string[] args)
-    {
-        //string[] directory = FindGitRepoRoot();
-        string bob = FindGitRepoRoot();
-        Console.WriteLine(bob);
-    }
-    static string FindGitRepoRoot()
-    {
-        string folder = AppDomain.CurrentDomain.BaseDirectory;
+    private List<ScriptureEntry> list;
 
-        while (folder != null)
+    public Library()
+    {
+        list = new List<ScriptureEntry>();
+
+        string _path = @"C:\Users\barbe\Documents\BYU-I\Spring 2026\CSE 210 - Programing with Classes\CSE210-Projects\CSE-210---Proves\library.txt";
+
+        string[] scriptureLines = File.ReadAllLines(_path);
+
+        foreach (string line in scriptureLines)
         {
-            if (Directory.Exists(Path.Combine(folder, ".git")))
+            
+            string[] col = line.Split('|');
+
+            if (col.Length == 2)
             {
-                return folder;
+                ScriptureEntry entry = new ScriptureEntry(col[0], col[1]);
+                list.Add(entry);
             }
-
-            folder = Directory.GetParent(folder)?.FullName;
         }
+    }
 
-        return null;
+    public List<ScriptureEntry> GetAll()
+    {
+        return list;
     }
 }
