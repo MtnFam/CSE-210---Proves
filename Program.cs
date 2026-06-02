@@ -1,7 +1,8 @@
 using System;
+using System.IO;
 using System.Globalization;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
+using System.Collections.Generic;
+using System.Linq;
 
 class Program
 {
@@ -16,7 +17,6 @@ class Program
     }
     static private int menu(string libname)
     {
-        Scripture script = new Scripture();
         Console.WriteLine("Choose an option or type 'quit' to exit:\n1) Learn random scripture\n2)Learn chosen scripture (must be in library)\n 3) Save new Scripture");
         string input = Console.ReadLine();
         int c;
