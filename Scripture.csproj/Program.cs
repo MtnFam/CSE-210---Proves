@@ -63,8 +63,19 @@ class Program
         var parts = line.Split('|', 2);
         return new Scripture(parts[0], parts[1]);
     }
-    public static void showscripture(Scripture )
+    public static void showscripture(Scripture script)
     {
+        Console.WriteLine("press enter to continue or 'quit' to finish");
+        string input="";
+        while (input != "quit")
+        {
+            script.ToString();
+            if (script.IsAllHidden() == true)
+            {
+                script.HideWords();
+            }
+        }
+        return;
         
     }
 }
