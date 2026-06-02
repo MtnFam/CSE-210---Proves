@@ -55,7 +55,7 @@ class Program
                 File.AppendAllText(libname, $"{nref}|{npas}" + Environment.NewLine);
                 break;
         }
-        return c;
+            return c;
     }
     public static Scripture GetScript(string library, int index)
     {
