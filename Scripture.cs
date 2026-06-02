@@ -12,6 +12,11 @@ public class Scripture
         _reference = reference;
         _passage = passage;
     }
+    public Scripture(string reference, string passage)
+    {
+        _reference = new Reference(reference);
+        _passage = new Passage(passage);
+    }
 
     // Calls the hideWords function from Passage (not directly manipulating the words).
     public void HideWords(int countToHide)
@@ -28,6 +33,6 @@ public class Scripture
     /// Formats the complete scripture for display in the console view.
     public override string ToString()
     {
-        return $"{_reference.ToString()}\n{_passage.ToString()}";
+        return $"{_reference}\n{_passage.ToString()}";
     }
 }
