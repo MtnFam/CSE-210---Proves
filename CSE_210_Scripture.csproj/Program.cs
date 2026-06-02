@@ -35,7 +35,7 @@ class Program
             case 1://Learn random
                 Random num = new Random();
                 var lines = File.ReadAllLines(libname);
-                int scrindex = num.Next(1, lines.Length);
+                int scrindex = num.Next(1, lines.Length+1);
                 Scripture scr = GetScript(libname,scrindex);
                 // find new scripture in lib from rand index
                 // open scripture
@@ -62,5 +62,9 @@ class Program
         string line = File.ReadLines(library).Skip(index - 1).First();
         var parts = line.Split('|', 2);
         return new Scripture(parts[0], parts[1]);
+    }
+    public static void showscripture(Scripture )
+    {
+        
     }
 }
