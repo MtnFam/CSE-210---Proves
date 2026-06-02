@@ -1,5 +1,0 @@
-C:\CSE210\CSE-210---Proves\obj\Debug\net10.0\CSE-210---Proves.GeneratedMSBuildEditorConfig.editorconfig
-C:\CSE210\CSE-210---Proves\obj\Debug\net10.0\CSE-210---Proves.AssemblyInfoInputs.cache
-C:\CSE210\CSE-210---Proves\obj\Debug\net10.0\CSE-210---Proves.AssemblyInfo.cs
-C:\CSE210\CSE-210---Proves\obj\Debug\net10.0\CSE-210---Proves.csproj.CoreCompileInputs.cache
-C:\CSE210\CSE-210---Proves\obj\Debug\net10.0\CSE-210---Proves.sourcelink.json
