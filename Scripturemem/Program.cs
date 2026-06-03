@@ -12,15 +12,17 @@ class Program
         int c = 1;
         while (c != 0)
         {
+            
             c=menu(libname);
         }
     }
     static private int menu(string libname)
     {
-        Console.WriteLine("Choose an option or type 'quit' to exit:\n1) Learn random scripture\n2) Learn chosen scripture (must be in library)\n3) Save new Scripture");
-        string input = Console.ReadLine();
+        Console.Clear();
         int c;
         c=-1;
+        Console.WriteLine("Choose an option or type 'quit' to exit:\n1) Learn random scripture\n2) Learn chosen scripture (must be in library)\n3) Save new Scripture");
+        string input = Console.ReadLine();
         while (input != "quit" && (!int.TryParse(input, out c) || c < 0 || c > 3))
         {
             Console.WriteLine("Enter 1-3 or 'quit' to exit.");
@@ -61,23 +63,24 @@ class Program
     public static Scripture GetScript(string library, int index)
     {
         string line = File.ReadLines(library).Skip(index - 1).First();
-        List<string> parts = line.Split('|', 2);
+        List<string> parts = line.Split('|', 2).ToList();
         return new Scripture(parts[0], parts[1]);
     }
     public static void showscripture(Scripture script)
     {
-        Console.WriteLine("press enter to continue or 'quit' to finish");
-        string input="";
-        Console.WriteLine(script.ToString());
-        while (input != "quit")
+        string input = "";
+
+    while (input != "quit")
+    {
+        Console.Clear();
+        Console.WriteLine(script.ToString()); 
+        Console.WriteLine("\nPress enter to continue or 'quit' to finish");
+        input = Console.ReadLine();
+        if (input != "quit")
         {
-            if (script.IsAllHidden() == false)
-            {
-                script.HideWords(3);
-            }
-            Console.WriteLine($"\r{script.ToString()}");
-            input=Console.ReadLine();
+            script.HideWords(3);
         }
-        return;
+    }
+    return;
     }
 }
