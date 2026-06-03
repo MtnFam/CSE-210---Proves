@@ -5,12 +5,7 @@ using System.IO;
 
 class Library
 {
-    static void Main(string[] args)
-    {
-        //string[] directory = FindGitRepoRoot();
-        string bob = FindGitRepoRoot();
-        Console.WriteLine(bob);
-    }
+    
     static string FindGitRepoRoot()
     {
         string folder = AppDomain.CurrentDomain.BaseDirectory;

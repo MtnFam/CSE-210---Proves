@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CSE210\\CSE-210---Proves\\scripturemem\\scripturemem.csproj": {}
+    "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {}
   },
   "projects": {
-    "C:\\CSE210\\CSE-210---Proves\\scripturemem\\scripturemem.csproj": {
+    "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CSE210\\CSE-210---Proves\\scripturemem\\scripturemem.csproj",
+        "projectUniqueName": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
         "projectName": "scripturemem",
-        "projectPath": "C:\\CSE210\\CSE-210---Proves\\scripturemem\\scripturemem.csproj",
+        "projectPath": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
         "packagesPath": "C:\\Users\\fruit\\.nuget\\packages\\",
-        "outputPath": "C:\\CSE210\\CSE-210---Proves\\scripturemem\\obj\\",
+        "outputPath": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
