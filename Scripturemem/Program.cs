@@ -92,9 +92,11 @@ class Program
         Console.WriteLine(script.ToString()); 
         Console.WriteLine("\nPress enter to continue or 'quit' to finish");
         input = Console.ReadLine();
+        Random num = new Random();
+        int val = num.Next(1, 5);
         if (input != "quit")
         {
-            script.HideWords(3);
+            script.HideWords(val);
         }
     }
     return;
