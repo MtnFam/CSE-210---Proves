@@ -43,10 +43,10 @@ class Program
                 break;
 
             case 2: //learn chosen
-                /*Console.WriteLine("Enter a reference in the form John 1:5 or Moroini 7:47-48\nEnsure there are capitals and spaces where needed");
+                Console.WriteLine("Enter a reference in the form John 1:5 or Moroini 7:47-48\nEnsure there are capitals and spaces where needed");
                 string sref = Console.ReadLine();
+                scr = GetScriptFRef(libname,sref); 
                 showscripture(scr);
-                */
                 Console.WriteLine("Not implemented yet");
                 break;
 
@@ -60,13 +60,29 @@ class Program
         }
             return c;
     }
-    public static Scripture GetScript(string library, int index)
+    private static Scripture GetScript(string library, int index)
     {
         string line = File.ReadLines(library).Skip(index - 1).First();
         List<string> parts = line.Split('|', 2).ToList();
         return new Scripture(parts[0], parts[1]);
     }
-    public static void showscripture(Scripture script)
+    private static Scripture GetScriptFRef(string library, string sref)
+    {
+        int lineNumber = 0;
+
+        foreach (string line in File.ReadLines(library))
+        {
+            lineNumber++;
+            string[] parts = line.Split('|', 2);
+            if (parts.Length > 0 &&
+                parts[0].Equals(sref, StringComparison.OrdinalIgnoreCase))
+            {
+                return GetScript(library,lineNumber);
+            }
+        }
+       throw new ArgumentException($"Scripture reference '{sref}' was not found.");
+    }
+    private static void showscripture(Scripture script)
     {
         string input = "";
 
