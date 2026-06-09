@@ -11,8 +11,9 @@ class Program
         // 2. Define the frames of the spinner
         string[] spinnerFrames = { "--", "\\", "|", "/" };
         
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i <= 20; i++)
         {
+            Console.Write(i);
             foreach (string frame in spinnerFrames)
             {
                 Console.Write(frame);
