@@ -12,6 +12,13 @@ class Activity
     //breathing, reflection, listing
     private List<string> _intro = ["This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.","This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.","This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area."];
     private List<string> _name = ["Breathing Activity","Refleciton Activity","Lisitng ACtiviity"];
+
+    private Animation _load = new Animation();
+
+    public Activity()
+    {
+        
+    }
     public void run(int actnum)
     {
         int time = intro(actnum);
