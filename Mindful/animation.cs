@@ -1,9 +1,9 @@
 using System;
 using System.Threading;
 
-class Program
+class Animation
 {    
-    static void Main(string[] args)
+    static void SpinCycle()
     {
         // 1. Hide the cursor for a cleaner look
         Console.CursorVisible = false;
