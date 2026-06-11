@@ -26,14 +26,7 @@ class ScriptureEntry
 
 class Library
 {
-<<<<<<< HEAD:Library.cs
     private List<ScriptureEntry> list;
-=======
-    
-    static string FindGitRepoRoot()
-    {
-        string folder = AppDomain.CurrentDomain.BaseDirectory;
->>>>>>> 920863c74cf0958d92bcb33c7fc9d1957db4bab8:Scripturemem/Library.cs
 
     public Library()
     {
