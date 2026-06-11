@@ -18,8 +18,6 @@ class Breathe
     {
         int leftover = _time%8;
         int cycle = _time/8;
-        leftover = leftover*1000;
-        tot = tot*1000;
         for (int i = cycle; i > 0; i--)
         {
             Console.WriteLine("Breathe in...");
@@ -39,6 +37,7 @@ class Breathe
             Console.WriteLine("3...");
             Thread.Sleep(1000);
         }
+        //adds 4 seconsd to end of looping but will lways be within 3s of given time
         for (int i = leftover; i > 0; i--)
         {
             Console.WriteLine("Breathe in...");
