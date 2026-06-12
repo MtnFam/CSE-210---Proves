@@ -3,7 +3,7 @@ using System.Threading;
 
 class Animation
 {    
-    static void SpinCycle()
+    static void Main(string[] args)
     {
         // 1. Hide the cursor for a cleaner look
         Console.CursorVisible = false;
