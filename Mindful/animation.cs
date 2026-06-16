@@ -1,3 +1,6 @@
+/*Renae Rogers - 6/9/26 
+    -Used porject requirement and w3schools for reference
+*/
 using System;
 using System.Threading;
 
@@ -24,6 +27,6 @@ class Animation
 
         Console.CursorVisible = true;
         Console.Clear();
-        Console.WriteLine("Task Complete! 🎉");
+        Console.WriteLine("Task Complete!");
     }
 }
