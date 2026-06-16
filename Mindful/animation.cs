@@ -1,9 +1,12 @@
+/*Renae Rogers - 6/9/26 
+    -Used porject requirement and w3schools for reference
+*/
 using System;
 using System.Threading;
 
 class Animation
 {    
-    static void Main(string[] args)
+    static void SpinCycle()
     {
         // 1. Hide the cursor for a cleaner look
         Console.CursorVisible = false;
@@ -24,11 +27,6 @@ class Animation
 
         Console.CursorVisible = true;
         Console.Clear();
-        Console.WriteLine("Task Complete! 🎉");
-    }
-
-    public void alterAnimation()
-    {
-        
+        Console.WriteLine("Task Complete!");
     }
 }
