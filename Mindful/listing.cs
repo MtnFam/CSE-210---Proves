@@ -61,7 +61,7 @@ class Listing : Activity
         _promptDisp = DisplayPrompt();
         while (startTime < endTime)
         {
-            Console.Clear;
+            Console.Clear();
             DisplayPrompt(number);
             GetInput();
             startTime = DateTime.Now;

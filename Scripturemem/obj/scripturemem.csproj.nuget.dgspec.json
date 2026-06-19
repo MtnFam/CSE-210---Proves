@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\College Docs\\CSE210_proves\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {}
+    "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {}
   },
   "projects": {
-    "C:\\College Docs\\CSE210_proves\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {
+    "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\College Docs\\CSE210_proves\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
+        "projectUniqueName": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
         "projectName": "scripturemem",
-        "projectPath": "C:\\College Docs\\CSE210_proves\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
-        "packagesPath": "C:\\Users\\renae\\.nuget\\packages\\",
-        "outputPath": "C:\\College Docs\\CSE210_proves\\CSE-210---Proves\\Scripturemem\\obj\\",
+        "projectPath": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\scripturemem.csproj",
+        "packagesPath": "C:\\Users\\fruit\\.nuget\\packages\\",
+        "outputPath": "C:\\CSE210\\CSE-210---Proves\\Scripturemem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\renae\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fruit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
