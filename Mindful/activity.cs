@@ -3,16 +3,18 @@ Name: Sean Gillman
 Date: 6/11/2026
 */
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.IO;
 using System.Reflection;
+using System.Threading; 
 
 class Activity
 {
     //breathing, reflection, listing
     private List<string> _intro = ["This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.","This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.","This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area."];
-    private List<string> _name = ["Breathing Activity","Refleciton Activity","Lisitng ACtiviity"];
+    private List<string> _name = ["Breathing Activity","Reflection Activity","Lisitng Activiity"];
 
     private Animation _loading = new Animation();
 
@@ -29,7 +31,7 @@ class Activity
             Breathe br = new Breathe(time);
             br.run();
             break;
-            case 1://listing
+            case 1://reflecting
             Reflection re = new Reflection(time);
             re.run();
             break;
@@ -49,15 +51,34 @@ class Activity
             Console.WriteLine("Please enter a valid whole number:");
         }
         return time;
-        }
+    }
     private void outro(int actnum)
     {
         Console.WriteLine($"\n\nYou have just completed the {_name[actnum]}, great job!");
         //add loading animation with buffer
     }
     
+    // Choose animation style -Renae
     public void alterAnimation()
+{
+    Console.WriteLine("\nSelect a loading animation style:");
+    Console.WriteLine("0. Classic Spinner ( | / - \\ )");
+    Console.WriteLine("1. Growing Dots ( . .. ... )");
+    Console.WriteLine("2. Progress Bar ( [==  ] )");
+    Console.Write("\nYour choice (Press Enter for default): ");
+
+    string input = Console.ReadLine();
+    if (int.TryParse(input, out int choice))
     {
-        _loading.alterAnimation();
+        _loading.SetAnimationType(choice);
+        Console.WriteLine("\nAnimation updated successfully!");
     }
+    else
+    {
+        _loading.SetAnimationType(0); // Default
+        Console.WriteLine("\nInvalid input. Defaulting to Classic Spinner.");
+    }
+    
+    Thread.Sleep(1500);
+}
 }
