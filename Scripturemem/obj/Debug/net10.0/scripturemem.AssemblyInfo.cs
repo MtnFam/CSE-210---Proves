@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("scripturemem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40a51bec26d6f756a6863297c6ad0fef07505f95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94e309ea44d5ddabba2bb7f763fa9bc1f1ce793e")]
 [assembly: System.Reflection.AssemblyProductAttribute("scripturemem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("scripturemem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

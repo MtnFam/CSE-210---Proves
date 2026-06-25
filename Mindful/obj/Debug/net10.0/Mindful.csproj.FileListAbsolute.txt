@@ -1,0 +1,5 @@
+C:\CSE210\CSE-210---Proves\Mindful\obj\Debug\net10.0\Mindful.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSE210\CSE-210---Proves\Mindful\obj\Debug\net10.0\Mindful.AssemblyInfoInputs.cache
+C:\CSE210\CSE-210---Proves\Mindful\obj\Debug\net10.0\Mindful.AssemblyInfo.cs
+C:\CSE210\CSE-210---Proves\Mindful\obj\Debug\net10.0\Mindful.csproj.CoreCompileInputs.cache
+C:\CSE210\CSE-210---Proves\Mindful\obj\Debug\net10.0\Mindful.sourcelink.json
