@@ -2,20 +2,36 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 class Goal
 {
-    private int _points;
-    private string _type;
-    private string _name;
-    private bool _iscomplete;
-     public Goal(string name, string type, int points)
+    protected int _points;
+    protected string _name;
+    protected bool _iscomplete;
+     public Goal(string name, int points)
     {
         _iscomplete=false;
         _name =name;
-        _type=type;
         _points=points;
     }
 
-    void complete()
+    public void Complete()
     {
         _iscomplete=true;
     }
+}
+class SimpleGoal : Goal
+{
+    public SimpleGoal(string name, int points) : base(name, points)
+    {
+        
+    }
+}
+class EternalGoal : Goal
+{
+    public void Complete()
+    {
+        return;
+    }
+}
+class ChecklistGoal : Goal
+{
+    
 }
