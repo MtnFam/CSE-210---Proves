@@ -27,7 +27,6 @@ class GoalSaver
         }
 
             List<string> parts = line.Split('|', 2).ToList();
-        }
 }
 /*Random num = new Random();
         var lines = File.ReadAllLines(libname);
